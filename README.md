@@ -1,6 +1,6 @@
 # Calculating Sample Size for Reliability Studies
 
-*David N Borg1, Aaron JE Bach2, Julia L O’Brien3, Kristin L Sainani4*
+*David N Borg (1), Aaron JE Bach (2), Julia L O’Brien (3), Kristin L Sainani (4)*
 
 Affiliations
 1: Griffith University, Menzies Health Institute Queensland, The Hopkins Centre
