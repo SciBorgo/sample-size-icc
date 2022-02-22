@@ -1,2 +1,1 @@
-# sample-size-icc
-Calculating Sample Size for Reliability Studies
+# Calculating Sample Size for Reliability Studies
