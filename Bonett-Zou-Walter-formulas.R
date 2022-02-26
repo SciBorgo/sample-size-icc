@@ -15,13 +15,15 @@ pnull = 0.8 # Null intraclass correlation coefficient
 #### Estimation approach
 # Bonnet (2002)
 nb = 1+(8*z**2*(1-p)**2*(1+(k-1)*p)**2)/(k*(k-1)*w**2)
-round(ifelse(k==2 & p>=0.7, nb+5*p, nb), digits = 0)
+round(ifelse(k==2 & p>=0.7, nb+5*p, nb), digits = 2)
+ceiling(ifelse(k==2 & p>=0.7, nb+5*p, nb))
 
 # Zou (2012)
 num = 2*(z*(1-p)*(1+(k-1)*p) + sqrt(z**2*(1-p)**2*(1+(k-1)*p)**2+2*w*z*z2*(1-p)*(1+(k-1)*p)*abs((k-2+2*p-2*k*p))))**2
 den = k*(k-1)*w**2
 nz = 1+num/den
-round(nz, digits = 0)
+round(nz, digits = 2)
+ceiling(nz)
 
 #### Hypothesis testing approach
 # Walter (1998)
@@ -30,7 +32,8 @@ null = pnull/(1-pnull)
 alt = p/(1-p)
 den = (log((1+k*null)/(1+k*alt)))**2
 nw = 1+num/((k-1)*den)
-round(nw, digits = 0)
+round(nw, digits = 2)
+ceiling(nw)
 
 
 
